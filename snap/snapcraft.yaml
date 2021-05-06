@@ -165,14 +165,14 @@ parts:
             export CROSS_COMPILE="aarch64-linux-gnu-"
             export CC="aarch64-linux-gnu-gcc"
             # TODO: export ARCH=arm64
-            make imx8mm_evk_config
+            make imx8mp_evk_config
             make -j$(nproc)
             cp u-boot.bin ${SNAPCRAFT_PART_INSTALL}/u-boot.bin
             cp spl/u-boot-spl.bin ${SNAPCRAFT_PART_INSTALL}/u-boot-spl.bin
             mkdir -p ${SNAPCRAFT_PART_INSTALL}/imx-boot-tools
             cp u-boot-nodtb.bin ${SNAPCRAFT_PART_INSTALL}/imx-boot-tools
             cp u-boot.dtb \
-               ${SNAPCRAFT_PART_INSTALL}/imx-boot-tools/imx8mm-evk.dtb
+               ${SNAPCRAFT_PART_INSTALL}/imx-boot-tools/imx8mp-evk.dtb
             # copy tools/mkimage tool for imx-boot stage
             cp tools/mkimage ${SNAPCRAFT_PART_INSTALL}
             tools/mkenvimage -r -s 4096 -o ${SNAPCRAFT_PART_INSTALL}/boot.sel - < /dev/null
