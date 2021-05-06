@@ -90,7 +90,7 @@ parts:
             export CFG_TEE_BENCHMARK=n
             # set NXP platform
             export PLATFORM=imx
-            export PLATFORM_FLAVOR=mx8mmevk
+            export PLATFORM_FLAVOR=mx8mpevk
             # add optee-fde TA
             cp -r ${SNAPCRAFT_STAGE}/optee-fde/ta/fde_key_handler ${SNAPCRAFT_PART_BUILD}/ta/
             # determine keys to be used
