@@ -36,7 +36,7 @@ parts:
         source-tag: rel_imx_5.4.70_2.3.2
         source-depth: 1
         override-build: |
-            platform="imx8mm"
+            platform="imx8mp"
             make \
                 CROSS_COMPILE=aarch64-linux-gnu- \
                 PLAT=${platform} \
